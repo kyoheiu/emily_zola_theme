@@ -31,7 +31,8 @@ body {
 
 .title {
     color: $themecolor;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .date {
@@ -101,6 +102,7 @@ h1 {
 
 h2 {
     font-size: 2.0rem;
+    color: $themecolor;
 }
 
 h3 {

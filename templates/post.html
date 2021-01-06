@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="title">
-  {{ section.title }}
-</div>
 
 {% for year, posts in section.pages | group_by(attribute="year") %}
     <h2>{{ year }}</h2>

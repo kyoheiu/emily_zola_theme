@@ -1,6 +1,7 @@
 +++
 title = "about this site and author"
 date = 2020-01-01
+template = "post-page.html"
 +++
 
 ### about this site

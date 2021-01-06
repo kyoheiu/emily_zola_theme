@@ -1,5 +1,5 @@
 +++
-title = "Welcome to emily, a KISS zola theme"
+title = "Welcome to emily, a KISS theme for Zola"
 date = 2020-12-31
 [taxonomies]
 categories = ["code"]
