@@ -51,6 +51,7 @@ body {
     top: 0;
     padding-bottom : 5px;
     border-bottom: solid 2px $basecolor;
+    overflow: hidden;
     a {
         color: $lightcolor;
     }

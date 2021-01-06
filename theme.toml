@@ -1,13 +1,13 @@
 name = "emily_zola_theme"
 description = "a KISS theme"
 license = "MIT"
-homepage = ""
-min_version = ""
+homepage = "https://gitlab.com/kyoheiu/emily_zola_theme"
+min_version = "0.1"
 demo = ""
 
 [extra]
 # Author name, displayed at footer.
-emily_author = "author name"
+emily_author = "kyohei uto"
 
 # Path to the header icon / favicon image.
 # Please save image to static/images
