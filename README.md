@@ -1,6 +1,6 @@
 # emily_zola_theme
 
-![screenshot01](images/screenshot01.png)
+![screenshot01](static/images/screenshot01.png)
 
 A KISS theme for Zola (static site generator). 
 features:
@@ -23,13 +23,13 @@ theme = "emily_zola_theme"
 
 ## example articles
 
-![screenshot02](images/screenshot02.png)
+![screenshot02](static/images/screenshot02.png)
 
 In `YOUR_SITE_DIRECTORY/themes/emily_zola_theme/content`.
 
 ## MathJax support
 
-![screenshot03](images/screenshot03.png)
+![screenshot03](static/images/screenshot03.png)
 
 To use MathJax, insert these lines in the front matter of `.md` file:
 
