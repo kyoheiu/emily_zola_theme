@@ -1,0 +1,149 @@
+$textcolor: #222;
+$lightcolor: #666;
+$basecolor: #4682b4;
+$codebackground: #eff1f5;
+
+html {
+    font-size: 15px;
+}
+
+body {
+    line-height: 1.5;
+    color: $textcolor;
+    font-family: monospace;
+    width: 80%;
+    min-width: 200px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    img, video {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+.date {
+    color: $basecolor;
+}
+
+.archive_title {
+    font-size: 1rem;
+}
+
+.taxonomies a {
+    color: $lightcolor;
+}
+
+.header {
+    color: $lightcolor;
+    background-color: white;
+    top: 0;
+    padding-bottom : 5px;
+    border-bottom: solid 2px $basecolor;
+    a {
+        color: $lightcolor;
+    }
+    nav {
+        margin: 0 0 0 auto;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+    }
+    li {
+        margin: 0 0 0 1rem;
+    }
+    img {
+        min-width: 20px;
+        min-height: 20px;
+        float: left;
+    }
+}
+
+.footer {
+    color: $lightcolor;
+    text-align: right;
+    padding: 10px;
+    a {
+        color: $lightcolor;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $textcolor;
+    .taxonomies {
+        color: $lightcolor;
+    }
+}
+
+a:visited {
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: $basecolor;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+h3 {
+    font-size: 1.4rem;    
+}
+
+h4 {
+    font-size: 1.3rem;    
+}
+
+h5 {
+    font-size: 1.2rem;    
+}
+
+h6 {
+    font-size: 1.1rem;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+pre {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+:not(pre) > code {
+    background-color: $codebackground;
+}
+
+blockquote {
+    border-left: 8px solid $basecolor;
+    padding: 1rem;
+}
+
+.site_title {
+    color: $basecolor;
+    font-size: 3vmin;
+    a {
+        text-decoration: none;
+        color: $basecolor;
+    }
+}
+
+.menu {
+    text-align: right;
+}

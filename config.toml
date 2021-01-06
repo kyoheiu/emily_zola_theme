@@ -1,0 +1,66 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+
+# The site title and description; used in feeds by default.
+title = "site title"
+description = ""
+
+# The default language; used in feeds.
+default_language = "en"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# The theme to use for code highlighting.
+# See below for list of allowed values.
+highlight_theme = "base16-ocean-dark"
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# The taxonomies to be rendered for the site and their configuration.
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags", lang = "fr"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
+taxonomies = [
+    {name = "categories", rss = false},
+    {name = "tags", rss = false},
+]
+
+# The additional languages for the site.
+# Example:
+#     languages = [
+#       {code = "fr", feed = true}, # there will be a feed for French content
+#       {code = "fr", search = true}, # there will be a Search Index for French content
+#       {code = "it"}, # there won't be a feed for Italian content
+#     ]
+#
+languages = []
+
+[extra]
+# Author name, displayed at footer.
+emily_author = "author name"
+
+# Path to the header icon / favicon image.
+# Please save image to static/images
+emily_icon = "/images/logo.png"
+
+emily_favicon = "/images/favicon.png"
+
+# header icon px size
+emily_iconsize = 50
+
+# top text
+emily_words = "Keep it simple and stupid."
+
+# number of posts on index
+emily_indexposts = 5

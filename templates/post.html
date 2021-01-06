@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ section.title }}
+</h1>
+
+{% for year, posts in section.pages | group_by(attribute="year") %}
+    <h2>{{ year }}</h2>
+
+    {% for post in posts %}
+    <p>
+      <div class="date">
+        {{ post.date }}
+      </div>
+      <div class="archive_title">
+        <a href="{{ post.permalink }}">{{ post.title }}</a>
+      </div>
+      <div class="taxonomies">
+          {% if post.taxonomies.categories %}
+              {% for category in post.taxonomies.categories %}
+              &emsp;<a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
+              {% endfor %}
+          {% endif %}
+          {% if post.taxonomies.tags %}
+              {% for tag in post.taxonomies.tags %}
+              &emsp;<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
+              {% endfor %}
+          {% endif %}
+      </div>      
+    </p>
+    {% endfor %}
+    
+{% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ config.title }}</title>
+  <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
+  <link rel="shortcut icon" type="image/svg+xml" href="{{ config.extra.emily_favicon }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+ 
+  {% if page.extra.math %}
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+  {% endif %}
+
+</head>
+
+<div class="header">
+  <p><a href="/"><img src="{{ config.base_url }}{{ config.extra.emily_icon }}" alt="{{ config.title }}" width="{{ config.extra.emily_iconsize }}" height=auto></a></p>
+  <div class="site_title">
+    <a href="/">&thinsp;{{ config.title }}</a>
+  </div>
+  <div class="menu">
+    <a href="/post">>archives</a>
+    &nbsp;<a href="/about">>about</a>
+  </div>
+</div>
+
+<body>
+  <section class="section">
+    <div class="container">
+      {% block content %} {% endblock %}
+    </div>
+  </section>
+</body>
+
+<div class="footer">
+  <a href="/">{{ config.title }}</a>&emsp;&copy; {{ config.extra.emily_author }} | powered by Zola.
+</div>
+
+</html>

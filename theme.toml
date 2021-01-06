@@ -1,0 +1,29 @@
+name = "emily_zola_theme"
+description = "a KISS theme"
+license = "MIT"
+homepage = ""
+min_version = ""
+demo = ""
+
+[extra]
+# Author name, displayed at footer.
+emily_author = "author name"
+
+# Path to the header icon / favicon image.
+# Please save image to static/images
+emily_icon = "/images/logo.png"
+
+emily_favicon = "/images/favicon.png"
+
+# px size
+emily_iconsize = 50
+
+# top text
+emily_words = "Keep it simple and stupid."
+
+# number of posts on index
+emily_indexposts = 5
+
+[author]
+name = "Kyohei Uto"
+homepage = "https://gitlab.com/kyoheiu"
