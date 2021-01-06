@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://emily-zola-theme.netlify.app/sitemap.xml
