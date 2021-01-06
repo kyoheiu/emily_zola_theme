@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "https://emily-zola-theme.netlify.app/"
 
+# Set theme
+#theme = ""
+
 # The site title and description; used in feeds by default.
 title = "site title"
 description = ""
