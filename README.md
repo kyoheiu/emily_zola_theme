@@ -32,7 +32,7 @@ In `YOUR_SITE_DIRECTORY/themes/emily_zola_theme/content`.
 
 ![screenshot03](static/images/ss02.png)
 
-To use MathJax, add these lines to the front matter in `.md` file. `[extra]` is mandatory:
+To use MathJax, add the following lines to the front matter in `.md` file. `[extra]` is mandatory:
 
 ```
 [extra]
@@ -40,13 +40,16 @@ math = true
 ```
 
 ## How to customize
-In addition to default values, there are 6 parts you can customize easily in this theme. Set your own in `config.toml`.
+In addition to default values, there are 6 parts you can customize easily in this theme:
+
 - author name (appears in footer)
-- icon (appears in header)
+- header icon (appears in header)
 - favicon
 - header icon size (default width: 70px)
 - top text in `index.html`
 - number of posts in `index.html` (default 5)
+
+Set your own in `themes/emily_zola_theme/theme.toml`, or to overwrite, copy `[extra]` block, paste it into your `config.toml` and edit.
 
 ## theme color
 By default steelblue (`#4682B4`). To change, set your own in `sass/main.scss`.
