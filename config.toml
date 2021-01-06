@@ -57,7 +57,7 @@ emily_icon = "/images/logo.png"
 emily_favicon = "/images/favicon.png"
 
 # header icon px size
-emily_iconsize = 50
+emily_iconsize = 70
 
 # top text
 emily_words = "Keep it simple and stupid."

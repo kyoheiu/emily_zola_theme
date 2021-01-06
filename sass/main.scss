@@ -1,6 +1,6 @@
 $textcolor: #222;
 $lightcolor: #666;
-$basecolor: #4682b4;
+$themecolor: #4682b4;
 $codebackground: #eff1f5;
 
 html {
@@ -34,7 +34,7 @@ body {
 }
 
 .date {
-    color: $basecolor;
+    color: $themecolor;
 }
 
 .archive_title {
@@ -50,7 +50,7 @@ body {
     background-color: white;
     top: 0;
     padding-bottom : 5px;
-    border-bottom: solid 2px $basecolor;
+    border-bottom: solid 2px $themecolor;
     overflow: hidden;
     a {
         color: $lightcolor;
@@ -95,7 +95,7 @@ a:visited {
 
 h1 {
     font-size: 2.5rem;
-    color: $basecolor;
+    color: $themecolor;
 }
 
 h2 {
@@ -132,16 +132,16 @@ pre {
 }
 
 blockquote {
-    border-left: 8px solid $basecolor;
+    border-left: 8px solid $themecolor;
     padding: 1rem;
 }
 
 .site_title {
-    color: $basecolor;
+    color: $themecolor;
     font-size: 3vmin;
     a {
         text-decoration: none;
-        color: $basecolor;
+        color: $themecolor;
     }
 }
 
