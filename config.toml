@@ -50,7 +50,7 @@ taxonomies = [
 languages = []
 
 [extra]
-# Author name, displayed at footer.
+# Author name, appears in footer.
 emily_author = "author name"
 
 # Path to the header icon / favicon image.
@@ -59,11 +59,12 @@ emily_icon = "/images/logo.png"
 
 emily_favicon = "/images/favicon.png"
 
-# header icon px size
+# header icon width.
+# height will be automatically rendered.
 emily_iconsize = 70
 
-# top text
+# top text in index.html.
 emily_words = "Keep it simple and stupid."
 
-# number of posts on index
+# number of posts in index.html.
 emily_indexposts = 5
