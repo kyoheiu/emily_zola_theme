@@ -4,6 +4,25 @@
 <h2>
   {{ page.title }}
 </h2>
-<div class="date">{{ page.date }}</div>
-<p>{{ page.content | safe }}</p>
+
+<div class="date">
+  {{ page.date }}
+</div>
+
+<div class="taxonomies">
+  {% if page.taxonomies.categories %}
+      {% for category in page.taxonomies.categories %}
+      <a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
+      {% endfor %}
+  {% endif %}
+  {% if page.taxonomies.tags %}
+      {% for tag in page.taxonomies.tags %}
+      &emsp;<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
+      {% endfor %}
+  {% endif %}
+</div>
+
+<p>
+  {{ page.content | safe }}
+</p>
 {% endblock content %}
