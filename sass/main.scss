@@ -17,6 +17,10 @@ body {
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    @media (max-width: 480px) {
+        width: 90%;
+    }
     
     img, video {
         display: block;
@@ -24,6 +28,11 @@ body {
         max-width: 90%;
     }
     
+    ul {
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+
     a {
         text-decoration: underline;
     }
@@ -136,7 +145,8 @@ pre {
 
 blockquote {
     border-left: 8px solid $themecolor;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
 }
 
 .site_title {
