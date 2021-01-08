@@ -15,8 +15,8 @@ body {
     min-width: 200px;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     @media (max-width: 480px) {
         width: 90%;
@@ -86,7 +86,9 @@ body {
 .footer {
     color: $lightcolor;
     text-align: right;
-    padding: 10px;
+    margin-top: 50px;
+    padding-top: 0px;
+    // border-top: solid 1px $themecolor;
     a {
         color: $lightcolor;
     }
@@ -114,7 +116,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.4rem;    
+    font-size: 1.5rem;    
     color: $themecolor;
 }
 
