@@ -61,7 +61,7 @@ emily_favicon = "/images/favicon.png"
 
 # header icon width.
 # height will be automatically rendered.
-emily_iconsize = 50
+emily_iconsize = 70
 
 # top text in index.html.
 emily_words = "Keep it simple and stupid."
