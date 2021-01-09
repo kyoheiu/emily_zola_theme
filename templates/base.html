@@ -4,7 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>{{ config.title }}</title>
-  <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
+  
+  {% if config.extra.dark_mode %}
+    <link rel="stylesheet" href="{{ get_url(path="dark.css") }}">
+  {% else %}
+    <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
+  {% endif %}
+
   <link rel="shortcut icon" type="image/png" href="{{ config.extra.emily_favicon }}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
  

@@ -1,4 +1,4 @@
-$themecolor: #4682B4;
+$themecolor: #4CCDFF;
 
 $backgroundcolor: white;
 $textcolor: #222;
@@ -16,8 +16,8 @@ html {
 
 body {
     line-height: 1.5;
-    color: $textcolor;
-    background-color: $backgroundcolor;
+    color: $dark-textcolor;
+    background-color: $dark-backgroundcolor;
     font-family: monospace;
     width: 80%;
     min-width: 200px;
@@ -38,7 +38,7 @@ body {
     }
 
     a {
-        color: $textcolor;
+        color: $dark-textcolor;
         text-decoration: underline;
     }
 
@@ -48,14 +48,14 @@ body {
 }
 
 .header {
-    color: $lightcolor;
-    background-color: $backgroundcolor;
+    color: $dark-lightcolor;
+    background-color: $dark-backgroundcolor;
     top: 0;
     padding-bottom : 5px;
     border-bottom: solid 2px $themecolor;
     overflow: hidden;
     a {
-        color: $lightcolor;
+        color: $dark-lightcolor;
     }
 }
 
@@ -64,7 +64,7 @@ body {
     justify-content: space-between;
     font-size: 1.5rem;
     a {
-        color: $textcolor;
+        color: $dark-textcolor;
         text-decoration: none;
     }
 }
@@ -98,18 +98,18 @@ body {
 }
 
 .taxonomies a {
-    color: $lightcolor;
+    color: $dark-lightcolor;
     text-decoration: none;
 }
 
 .footer {
-    color: $lightcolor;
+    color: $dark-lightcolor;
     text-align: right;
     margin-top: 50px;
     padding-top: 0px;
     // border-top: solid 1px $themecolor;
     a {
-        color: $lightcolor;
+        color: $dark-lightcolor;
     }
 }
 
@@ -151,7 +151,7 @@ pre {
 }
 
 :not(pre) > code {
-    background-color: $codebackground;
+    background-color: $dark-codebackground;
 }
 
 blockquote {
