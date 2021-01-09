@@ -45,7 +45,7 @@ In addition to default values, there are 6 parts you can customize easily in thi
 - author name (appears in footer)
 - header icon (appears in header)
 - favicon
-- header icon size (default width: 70px)
+- header icon size (default width: 50px)
 - top text in `index.html`
 - number of posts in `index.html` (default 5)
 
