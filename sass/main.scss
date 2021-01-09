@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 pre {
     overflow-x: scroll;
     overflow-y: hidden;
+    padding: 10px;
 }
 
 :not(pre) > code {
