@@ -17,10 +17,6 @@ body {
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
-
-    @media (max-width: 480px) {
-        width: 90%;
-    }
     
     img, video {
         display: block;
@@ -34,25 +30,13 @@ body {
     }
 
     a {
+        color: $textcolor;
         text-decoration: underline;
     }
-}
 
-.title {
-    color: $themecolor;
-    font-size: 1.3rem;
-}
-
-.date {
-    color: $themecolor;
-}
-
-.archive_title {
-    font-size: 1rem;
-}
-
-.taxonomies a {
-    color: $lightcolor;
+    @media (max-width: 480px) {
+        width: 90%;
+    }
 }
 
 .header {
@@ -83,6 +67,42 @@ body {
     }
 }
 
+.site_title {
+    font-size: 3vmin;
+    a {
+        color: $textcolor;
+        text-decoration: none;
+    }
+}
+
+.menu {
+    text-align: right;
+}
+
+.date {
+    color: $themecolor;
+}
+
+.title {
+    color: $themecolor;
+    font-size: 1.3rem;
+    a {
+        text-decoration: none;
+    }
+}
+
+.archive_title {
+    font-size: 1rem;
+    a {
+        text-decoration: none;
+    }
+}
+
+.taxonomies a {
+    color: $lightcolor;
+    text-decoration: none;
+}
+
 .footer {
     color: $lightcolor;
     text-align: right;
@@ -92,17 +112,6 @@ body {
     a {
         color: $lightcolor;
     }
-}
-
-a {
-    text-decoration: none;
-    color: $textcolor;
-    .taxonomies {
-        color: $lightcolor;
-    }
-}
-
-a:visited {
 }
 
 h1 {
@@ -149,17 +158,4 @@ blockquote {
     border-left: 8px solid $themecolor;
     padding: 0.5rem;
     margin: 1rem;
-}
-
-.site_title {
-    color: $themecolor;
-    font-size: 3vmin;
-    a {
-        text-decoration: none;
-        color: $themecolor;
-    }
-}
-
-.menu {
-    text-align: right;
 }
