@@ -4,9 +4,6 @@
 
 {{ config.extra.emily_words }}
 
-<h3>
-  recent posts
-</h3>
   {% set section = get_section(path="post/_index.md") %}
   {% for page in section.pages %}
     {% if loop.index0 == config.extra.emily_indexposts %}{% break %}{% endif %}
