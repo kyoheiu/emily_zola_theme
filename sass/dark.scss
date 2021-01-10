@@ -1,14 +1,14 @@
-$themecolor: #4CCDFF;
+$dark-themecolor:#66CCFF;
 
-$backgroundcolor: white;
+$backgroundcolor: #FFFFFF;
 $textcolor: #222;
 $lightcolor: #666;
 $codebackground: #EFF1F5;
 
 $dark-backgroundcolor: #1E2836;
-$dark-textcolor: #FFFFF9;
-$dark-lightcolor: #EFF1F5;
-$dark-codebackground: #555;
+$dark-textcolor: #EEEEEE;
+$dark-lightcolor: #CCCCCC;
+$dark-codebackground: #555555;
 
 html {
     font-size: 15px;
@@ -52,7 +52,7 @@ body {
     background-color: $dark-backgroundcolor;
     top: 0;
     padding-bottom : 5px;
-    border-bottom: solid 2px $themecolor;
+    border-bottom: solid 1px $dark-themecolor;
     overflow: hidden;
     a {
         color: $dark-lightcolor;
@@ -77,11 +77,11 @@ body {
 }
 
 .date {
-    color: $themecolor;
+    color: $dark-themecolor;
 }
 
 .title {
-    color: $themecolor;
+    color: $dark-themecolor;
     font-size: 1.3rem;
     line-height: 1.3rem;
     a {
@@ -107,7 +107,7 @@ body {
     text-align: right;
     margin-top: 50px;
     padding-top: 0px;
-    // border-top: solid 1px $themecolor;
+    // border-top: solid 1px $dark-themecolor;
     a {
         color: $dark-lightcolor;
     }
@@ -115,17 +115,17 @@ body {
 
 h1 {
     font-size: 2.2rem;
-    color: $themecolor;
+    color: $dark-themecolor;
 }
 
 h2 {
     font-size: 2.0rem;
-    color: $themecolor;
+    color: $dark-themecolor;
 }
 
 h3 {
     font-size: 1.5rem;    
-    color: $themecolor;
+    color: $dark-themecolor;
 }
 
 h4 {
@@ -155,7 +155,7 @@ pre {
 }
 
 blockquote {
-    border-left: 8px solid $themecolor;
+    border-left: 5px solid $dark-themecolor;
     padding: 0.5rem;
     margin: 1rem;
 }
