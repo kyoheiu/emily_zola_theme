@@ -59,6 +59,14 @@ body {
     }
 }
 
+.button_no_decoration {
+    color: $light-themecolor;
+    border: none;
+    outline: none;
+    background: transparent;
+    vertical-align: middle;
+}
+
 .site_title {
     display: flex;
     justify-content: space-between;

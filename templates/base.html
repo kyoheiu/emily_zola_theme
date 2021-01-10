@@ -4,15 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>{{ config.title }}</title>
-  
-  {% if config.extra.dark_mode %}
-    <link rel="stylesheet" href="{{ get_url(path="dark.css") }}">
-  {% else %}
-    <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
-  {% endif %}
 
   <link rel="shortcut icon" type="image/png" href="{{ config.extra.emily_favicon }}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  {% if config.extra.dark_mode %}
+  <link id="style" rel="stylesheet" href="dark.css">
+  {% else %}
+  <link id="style" rel="stylesheet" href="main.css">
+  {% endif %}
+
+  {% if config.extra.toggle_css %}
+  <script type="text/javascript">
+  function toggle_css() {
+    var el = document.getElementById("style");
+    if (el.href.match("main.css")) {
+      el.href = "dark.css";
+    }
+    else {
+      el.href = "main.css";
+    }
+  }
+  </script>
+  {% endif %}
  
   {% if page.extra.math %}
   <script>
@@ -37,6 +52,7 @@
   <div class="menu">
     <a href="/post">>archives</a>
     &nbsp;<a href="/about">>about</a>
+    &nbsp;<button type="button" class="button_no_decoration" onclick="toggle_css()"><i class="material-icons">brightness_medium</i></button>
   </div>
 </div>
 
