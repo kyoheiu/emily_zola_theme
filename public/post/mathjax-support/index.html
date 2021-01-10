@@ -4,13 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>site title</title>
-  
-  
-    <link rel="stylesheet" href="https:&#x2F;&#x2F;emily-zola-theme.netlify.app&#x2F;dark.css">
-  
 
   <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  
+  <link id="style" rel="stylesheet" href="main.css">
+  
+
+  
+  <script type="text/javascript">
+  function toggle_css() {
+    var el = document.getElementById("style");
+    if (el.href.match("main.css")) {
+      el.href = "dark.css";
+    }
+    else {
+      el.href = "main.css";
+    }
+  }
+  </script>
+  
  
   
   <script>
@@ -35,6 +50,7 @@
   <div class="menu">
     <a href="/post">>archives</a>
     &nbsp;<a href="/about">>about</a>
+    &nbsp;<button type="button" class="button_no_decoration" onclick="toggle_css()"><i class="material-icons">brightness_medium</i></button>
   </div>
 </div>
 
