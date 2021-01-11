@@ -70,4 +70,4 @@ emily_words = "Keep it simple and stupid."
 emily_indexposts = 5
 
 # switch to dark-theme
-dark_mode = true
+emily_dark_mode = false
