@@ -1,6 +1,8 @@
 # emily_zola_theme
 
 ![screenshot01](static/images/ss01.png)
+![screenshot03](static/images/ss03.png)
+
 
 A KISS theme for Zola (static site generator written in Rust). 
 
@@ -30,7 +32,7 @@ In `YOUR_SITE_DIRECTORY/themes/emily_zola_theme/content`.
 
 ## MathJax support
 
-![screenshot03](static/images/ss02.png)
+![screenshot02](static/images/ss02.png)
 
 To use MathJax, add the following lines to the front matter in `.md` file. `[extra]` is mandatory:
 
@@ -40,7 +42,7 @@ math = true
 ```
 
 ## How to customize
-In addition to default values, there are 6 parts you can customize easily in this theme:
+In addition to default values, there are 7 parts you can customize easily in this theme:
 
 - author name (appears in footer)
 - header icon (appears in header)
@@ -48,12 +50,6 @@ In addition to default values, there are 6 parts you can customize easily in thi
 - header icon size (default width: 50px)
 - top text in `index.html`
 - number of posts in `index.html` (default 5)
+- dark theme (`false` -> light theme | `true` -> dark theme)
 
 Set your own in `themes/emily_zola_theme/theme.toml`, or to overwrite, copy `[extra]` block, paste it into your `config.toml` and edit.
-
-## theme color
-By default steelblue (`#4682B4`). To change, set your own in `sass/main.scss`.
-
-```
-$themecolor: #COLORHEX;
-```
