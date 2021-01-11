@@ -10,6 +10,7 @@ Features:
 - simple & clean
 - mobile-friendly
 - MathJax support
+- light / dark theme
 
 Demo site is [here](https://emily-zola-theme.netlify.app/).
 
