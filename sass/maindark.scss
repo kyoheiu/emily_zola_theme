@@ -98,7 +98,7 @@ body {
 }
 
 .archive_title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.3rem;
     a {
         text-decoration: none;
@@ -106,6 +106,7 @@ body {
 }
 
 .taxonomies a {
+    font-size: 0.9rem;
     color: $dark-lightcolor;
     text-decoration: none;
 }
