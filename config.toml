@@ -69,8 +69,5 @@ emily_words = "Keep it simple and stupid."
 # number of posts in index.html.
 emily_indexposts = 5
 
-# set dark mode as default
-dark_mode = false
-
-# enable toggler between light and dark
-toggle_css = true
+# switch to dark-theme
+dark_mode = true

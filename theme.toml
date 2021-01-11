@@ -2,7 +2,6 @@ name = "emily_zola_theme"
 description = "a KISS theme for Zola"
 license = "MIT"
 homepage = "https://gitlab.com/kyoheiu/emily_zola_theme"
-min_version = "0.1"
 demo = "https://emily-zola-theme.netlify.app/"
 
 [extra]
@@ -25,11 +24,8 @@ emily_words = "Keep it simple and stupid."
 # number of posts in index.html.
 emily_indexposts = 5
 
-# dark mode setting
+# switch to dark-theme
 dark_mode = false
-
-# enable toggler between light and dark
-toggle_css = true
 
 [author]
 name = "Kyohei Uto"
