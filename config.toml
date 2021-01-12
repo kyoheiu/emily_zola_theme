@@ -14,17 +14,6 @@ default_language = "en"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
-
-# The theme to use for code highlighting.
-# See below for list of allowed values.
-highlight_theme = "monokai"
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
-
 # The taxonomies to be rendered for the site and their configuration.
 # Example:
 #     taxonomies = [
@@ -33,7 +22,6 @@ build_search_index = false
 #       {name = "categories", paginate_by = 5},  # 5 items per page for a term
 #       {name = "authors"}, # Basic definition: no feed or pagination
 #     ]
-#
 taxonomies = [
     {name = "categories", rss = false},
     {name = "tags", rss = false},
@@ -48,6 +36,26 @@ taxonomies = [
 #     ]
 #
 languages = []
+
+[markdown]
+# When set to "true", all code blocks are highlighted.
+highlight_code = true
+
+# The theme to use for code highlighting.
+# See below for list of allowed values.
+highlight_theme = "base16-ocean-dark"
+
+# When set to "true", emoji aliases translated to their corresponding
+# Unicode emoji equivalent in the rendered Markdown files. (e.g.: :smile: => 😄)
+render_emoji = false
+
+[search]
+# Whether to include the title of the page/section in the index
+include_title = false
+# Whether to include the description of the page/section in the index
+include_description = false
+# Whether to include the rendered content of the page/section in the index
+include_content = false
 
 [extra]
 # Author name, appears in footer.
