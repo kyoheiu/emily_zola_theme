@@ -3,12 +3,16 @@
 {% block title %}{{ term.name }}{% endblock title%}
 
 {% block content %}
-<h1>Tag: {{ term.name }}</h1>
+<h2>Tag: {{ term.name }}</h2>
 
 {% for page in term.pages %}
 <p>
-  {{ page.date }}
-  <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+  <div class="date">
+    {{ page.date }}
+  </div>
+  <div class="archive_title">
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+  </div>
 </p>
 {% endfor %}
 
