@@ -7,23 +7,23 @@
 <h3>
   Categories & Tags
 </h3>
-<div class="taxonomies_list">
+<p class="taxonomies_list">
 {% set categories = get_taxonomy(kind="categories") %}
   {% for term in categories.items %}
       <a href="{{ term.permalink }}">/{{ term.name }}
       ({{ term.pages | length }})</a>&nbsp;
   {% endfor %}
 </ul>
-</div>
+</p>
 
-<div class="taxonomies_list">
+<p class="taxonomies_list">
 {% set tags = get_taxonomy(kind="tags") %}
   {% for term in tags.items %}
     <a href="{{ term.permalink }}">#{{ term.name }}
     ({{ term.pages | length }})</a>&nbsp;
   {% endfor %}
 </ul>
-</div>
+</p>
 
 {% for year, posts in section.pages | group_by(attribute="year") %}
     <h3>{{ year }}</h3>
