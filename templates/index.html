@@ -4,30 +4,30 @@
 
 {{ config.extra.emily_words }}
 
-  {% set section = get_section(path="post/_index.md") %}
-  {% for page in section.pages %}
-    {% if loop.index0 == config.extra.emily_indexposts %}{% break %}{% endif %}
-    <p>
-      <div class="date">
-        {{ page.date }}
-      </div>
-      <div class="title">
-        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-      </div>
-      <div class="taxonomies">
-      {% if page.taxonomies.categories %}
-          {% for category in page.taxonomies.categories %}
-          &emsp;<a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
-          {% endfor %}
-      {% endif %}
-      {% if page.taxonomies.tags %}
-          {% for tag in page.taxonomies.tags %}
-          &emsp;<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
-          {% endfor %}
-      {% endif %}
-      </div>
-    </p>
-  {% endfor %}
+{% set section = get_section(path="post/_index.md") %}
+{% for page in section.pages %}
+  {% if loop.index0 == config.extra.emily_indexposts %}{% break %}{% endif %}
+  <p>
+    <div class="date">
+      {{ page.date }}
+    </div>
+    <div class="title">
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    </div>
+    <div class="taxonomies">
+    {% if page.taxonomies.categories %}
+        {% for category in page.taxonomies.categories %}
+        &emsp;<a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
+        {% endfor %}
+    {% endif %}
+    {% if page.taxonomies.tags %}
+        {% for tag in page.taxonomies.tags %}
+        &emsp;<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
+        {% endfor %}
+    {% endif %}
+    </div>
+  </p>
+{% endfor %}
 
 <p>
   &emsp;<a href="/post">>archives</a>

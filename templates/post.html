@@ -1,9 +1,32 @@
 {% extends "base.html" %}
 
+{% block title %}archives{% endblock title%}
+
 {% block content %}
 
+<h3>
+  Categories & Tags
+</h3>
+<p>
+{% set categories = get_taxonomy(kind="categories") %}
+  {% for term in categories.items %}
+      <a href="{{ term.permalink }}">/{{ term.name }}</a>
+      ({{ term.pages | length }})
+  {% endfor %}
+</ul>
+</p>
+
+<p>
+{% set tags = get_taxonomy(kind="tags") %}
+  {% for term in tags.items %}
+    <a href="{{ term.permalink }}">#{{ term.name }}</a>
+    ({{ term.pages | length }})
+  {% endfor %}
+</ul>
+</p>
+
 {% for year, posts in section.pages | group_by(attribute="year") %}
-    <h2>{{ year }}</h2>
+    <h3>{{ year }}</h3>
 
     {% for post in posts %}
     <p>
