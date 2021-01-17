@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ config.title }}</title>
+  {% block title %}
+    <title>{{ config.title }}</title>
+  {% endblock %}
 
   <link rel="shortcut icon" type="image/png" href="{{ config.extra.emily_favicon }}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,19 +14,6 @@
   <link id="style1" rel="stylesheet" type="text/css" href={{ get_url(path="maindark.css")}}>
   {% else %}
   <link id="style2" rel="stylesheet" type="text/css" href={{ get_url(path="main.css") }}>
-  {% endif %}
-
-  {% if page.extra.math %}
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
-    };
-  </script>
-  <script type="text/javascript" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-  </script>
   {% endif %}
 
 </head>
