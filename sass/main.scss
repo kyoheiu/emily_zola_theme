@@ -3,7 +3,7 @@ $light-themecolor: #6699CC;
 $backgroundcolor: #FFFFFF;
 $textcolor: #222;
 $lightcolor: #666;
-$codebackground: #EFF1F5;
+$codebackground: #dfdfdf;
 
 $dark-backgroundcolor: #1E2836;
 $dark-textcolor: #EEEEEE;
@@ -122,7 +122,6 @@ body {
     text-align: right;
     margin-top: 50px;
     padding-top: 0px;
-    // border-top: solid 1px $light-themecolor;
     a {
         color: $lightcolor;
     }
@@ -173,4 +172,16 @@ blockquote {
     border-left: 8px solid $light-themecolor;
     padding: 0.5rem;
     margin: 1rem;
+}
+
+table th {
+    background-color: $codebackground;
+}
+
+table th, td {
+    border: solid 1px $codebackground;
+}
+
+table td {
+    padding: 10px;
 }

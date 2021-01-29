@@ -174,3 +174,15 @@ blockquote {
     padding: 0.5rem;
     margin: 1rem;
 }
+
+table th {
+    background-color: $dark-codebackground;
+}
+
+table th, td {
+    border: solid 1px $dark-codebackground;
+}
+
+table td {
+    padding: 10px;
+}
