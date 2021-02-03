@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emily-zola-theme.netlify.app/sitemap.xml
