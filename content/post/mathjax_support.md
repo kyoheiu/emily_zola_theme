@@ -8,14 +8,12 @@ tags = ["Euler's identity"]
 math = true
 +++
 
-**You have to add**
+**Please add the following lines in the front matter when using MathJax.**
 
 ```
 [extra]
 math = true
 ```
-
-**in the front matter when using MathJax.**
 
 ---
 
