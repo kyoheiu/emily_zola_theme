@@ -34,7 +34,7 @@
       <div class="archive_title">
         <a href="{{ post.permalink }}">{{ post.title }}</a>
       </div>
-      <div class="taxonomies">
+      <div class="taxonomies_index">
           {% if post.taxonomies.categories %}
               {% for category in post.taxonomies.categories %}
               &emsp;<a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
