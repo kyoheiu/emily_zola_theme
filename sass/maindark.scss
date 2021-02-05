@@ -42,7 +42,7 @@ body {
         text-decoration: underline;
     }
 
-    @media (max-width: 480px) {
+    @media screen and(max-width: 480px) {
         width: 90%;
     }
 }
@@ -109,6 +109,16 @@ body {
     font-size: 0.9rem;
     color: $dark-lightcolor;
     text-decoration: none;
+}
+
+.taxonomies_index a {
+    font-size: 0.9rem;
+    color: $dark-lightcolor;
+    text-decoration: none;
+
+    @media screen and(max-width: 480px) {
+        display: none;
+    }
 }
 
 .taxonomies_list {
