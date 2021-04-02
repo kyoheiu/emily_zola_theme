@@ -18,9 +18,6 @@ emily_favicon = "/images/favicon.png"
 # height will be automatically rendered.
 emily_iconsize = 70
 
-# top text in index.html.
-emily_words = "Keep it simple and stupid."
-
 # number of posts in index.html.
 emily_indexposts = 5
 

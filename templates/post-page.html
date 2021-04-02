@@ -5,11 +5,9 @@
 {% endblock %}
 
 {% block content %}
-  [{{ page.title }}]
-<div class="date">
-  {{ page.date }}
-</div>
-
+<p>
+<div class="archive_title">[{{ page.title }}]</div>
+<div class="date">{{ page.date }}</div>
 <div class="taxonomies">
   {% if page.taxonomies.categories %}
       {% for category in page.taxonomies.categories %}
@@ -22,6 +20,8 @@
       {% endfor %}
   {% endif %}
 </div>
+</p>
+
 <p>
   {{ page.content | safe }}
 </p>

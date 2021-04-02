@@ -49,7 +49,6 @@ In addition to default values, you can customize following parts easily:
 - header icon (appears in header)
 - favicon
 - header icon size (default width: 70px)
-- top text in `index.html`
 - number of posts in `index.html` (default 5)
 - dark theme (`false` -> light theme | `true` -> dark theme)
 - change-theme button (`true` -> button will appear)
