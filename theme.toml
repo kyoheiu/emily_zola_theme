@@ -28,7 +28,7 @@ emily_indexposts = 5
 emily_dark_mode = false
 
 # show theme-toggler
-emily_theme_toggler = false
+emily_theme_toggler = true
 
 [author]
 name = "Kyohei Uto"
