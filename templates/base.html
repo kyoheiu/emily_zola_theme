@@ -11,10 +11,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   {% if config.extra.emily_dark_mode %}
-  <link id="style1" rel="stylesheet" type="text/css" href={{ get_url(path="maindark.css")}}>
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/dark.css">
   {% else %}
-  <link id="style2" rel="stylesheet" type="text/css" href={{ get_url(path="main.css") }}>
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/light.css">
   {% endif %}
+
+<script type="text/javascript" src="/js/theme.js"></script>
 
 </head>
 
@@ -27,10 +29,15 @@
   <div class="menu">
     <a href="/post">>archives</a>
     &nbsp;<a href="/about">>about</a>
+
+    {% if config.extra.emily_theme_toggler %}
+    <button onclick="changeTheme()">change theme</button>
+    {% endif %}
+
   </div>
 </div>
 
-<body>
+<body onload = "getTheme()">
   <section class="section">
     <div class="container">
       {% block content %} {% endblock %}

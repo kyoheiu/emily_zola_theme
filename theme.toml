@@ -27,6 +27,9 @@ emily_indexposts = 5
 # switch to dark-theme
 emily_dark_mode = false
 
+# show theme-toggler
+emily_theme_toggler = false
+
 [author]
 name = "Kyohei Uto"
 homepage = "https://gitlab.com/kyoheiu"

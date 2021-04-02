@@ -1,13 +1,13 @@
-$light-themecolor: #6699CC;
+$dark-themecolor:#66CCFF;
 
 $backgroundcolor: #FFFFFF;
 $textcolor: #222;
 $lightcolor: #666;
-$codebackground: #dfdfdf;
+$codebackground: #EFF1F5;
 
 $dark-backgroundcolor: #1E2836;
 $dark-textcolor: #EEEEEE;
-$dark-lightcolor: #CCCCCC;
+$dark-lightcolor: #BBBBBB;
 $dark-codebackground: #555555;
 
 html {
@@ -16,8 +16,8 @@ html {
 
 body {
     line-height: 1.5;
-    color: $textcolor;
-    background-color: $backgroundcolor;
+    color: $dark-textcolor;
+    background-color: $dark-backgroundcolor;
     font-family: sans-serif;
     width: 80%;
     min-width: 200px;
@@ -38,7 +38,7 @@ body {
     }
 
     a {
-        color: $textcolor;
+        color: $dark-textcolor;
         text-decoration: underline;
     }
 
@@ -48,19 +48,19 @@ body {
 }
 
 .header {
-    color: $lightcolor;
-    background-color: $backgroundcolor;
+    color: $dark-lightcolor;
+    background-color: $dark-backgroundcolor;
     top: 0;
     padding-bottom : 5px;
-    border-bottom: solid 2px $light-themecolor;
+    border-bottom: solid 1px $dark-themecolor;
     overflow: hidden;
     a {
-        color: $lightcolor;
+        color: $dark-lightcolor;
     }
 }
 
 .button_no_decoration {
-    color: $light-themecolor;
+    color: $dark-themecolor;
     border: none;
     outline: none;
     background: transparent;
@@ -72,7 +72,7 @@ body {
     justify-content: space-between;
     font-size: 1.5rem;
     a {
-        color: $textcolor;
+        color: $dark-textcolor;
         text-decoration: none;
     }
 }
@@ -85,13 +85,13 @@ body {
 }
 
 .date {
-    color: $light-themecolor;
+    color: $dark-themecolor;
 }
 
 .title {
-    color: $light-themecolor;
+    color: $dark-themecolor;
     font-size: 1.3rem;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
     a {
         text-decoration: none;
     }
@@ -99,7 +99,7 @@ body {
 
 .archive_title {
     font-size: 1.3rem;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
     a {
         text-decoration: none;
     }
@@ -107,7 +107,7 @@ body {
 
 .taxonomies a {
     font-size: 0.9rem;
-    color: $lightcolor;
+    color: $dark-lightcolor;
     text-decoration: none;
 }
 
@@ -128,28 +128,29 @@ body {
 }
 
 .footer {
-    color: $lightcolor;
+    color: $dark-lightcolor;
     text-align: right;
     margin-top: 50px;
     padding-top: 0px;
+    // border-top: solid 1px $dark-themecolor;
     a {
-        color: $lightcolor;
+        color: $dark-lightcolor;
     }
 }
 
 h1 {
     font-size: 2.2rem;
-    color: $light-themecolor;
+    color: $dark-themecolor;
 }
 
 h2 {
     font-size: 2.0rem;
-    color: $light-themecolor;
+    color: $dark-themecolor;
 }
 
 h3 {
     font-size: 1.5rem;    
-    color: $light-themecolor;
+    color: $dark-themecolor;
 }
 
 h4 {
@@ -176,28 +177,36 @@ pre {
 }
 
 :not(pre) > code {
-    background-color: $codebackground;
+    background-color: $dark-codebackground;
 }
 
 blockquote {
-    border-left: 8px solid $light-themecolor;
+    border-left: 5px solid $dark-themecolor;
     padding: 0.5rem;
     margin: 1rem;
 }
 
 table {
-    padding: 10px;
     max-width: 90%;
 }
 
 table th {
-    background-color: $codebackground;
+    padding: 10px;
+    background-color: $dark-codebackground;
 }
 
 table th, td {
-    border: solid 1px $codebackground;
+    border: solid 1px $dark-codebackground;
 }
 
 table td {
     padding: 10px;
+}
+
+button {
+    color: $dark-backgroundcolor;
+    background-color: $dark-themecolor;
+    border: solid;
+    border-radius: 3px;
+    border-color: $dark-themecolor;
 }

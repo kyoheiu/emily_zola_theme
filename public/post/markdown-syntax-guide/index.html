@@ -11,8 +11,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   
-  <link id="style1" rel="stylesheet" type="text/css" href=https:&#x2F;&#x2F;emily-zola-theme.netlify.app&#x2F;maindark.css>
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/dark.css">
   
+
+<script type="text/javascript" src="/js/theme.js"></script>
 
 </head>
 
@@ -25,10 +27,15 @@
   <div class="menu">
     <a href="/post">>archives</a>
     &nbsp;<a href="/about">>about</a>
+
+    
+    <button onclick="changeTheme()">change theme</button>
+    
+
   </div>
 </div>
 
-<body>
+<body onload = "getTheme()">
   <section class="section">
     <div class="container">
       

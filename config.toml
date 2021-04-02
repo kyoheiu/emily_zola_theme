@@ -79,3 +79,6 @@ emily_indexposts = 5
 
 # switch to dark-theme
 emily_dark_mode = true
+
+# show theme-toggler
+emily_theme_toggler = true
