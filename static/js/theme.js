@@ -1,4 +1,4 @@
-const key = 'current_tudurikata_style';
+const key = 'current_emily_zola_style';
 
 function getTheme() {
   let theme = document.getElementById('stylesheet');

@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-  {{ page.title }}
+  [{{ page.title }}]
 <div class="date">
   {{ page.date }}
 </div>
@@ -22,7 +22,6 @@
       {% endfor %}
   {% endif %}
 </div>
-
 <p>
   {{ page.content | safe }}
 </p>
