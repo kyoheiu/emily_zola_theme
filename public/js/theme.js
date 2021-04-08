@@ -6,7 +6,7 @@ function getTheme() {
   if (current_style === null) {
     localStorage.setItem(key, theme.href);
   }
-  theme.href = current_style;
+  theme.href = localStorage.getItem(key);
 }
 
 function changeTheme() {
