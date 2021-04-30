@@ -6,9 +6,11 @@
 
 {% block content %}
 <p>
-<div class="archive_title">[{{ page.title }}]</div>
-<div class="date">{{ page.date }}</div>
-<div class="taxonomies">
+  <div class="postpage_title">{{ page.title }}</div>
+</p>
+<p>
+  <div class="date">{{ page.date }}</div>
+  <div class="taxonomies">
   {% if page.taxonomies.categories %}
       {% for category in page.taxonomies.categories %}
       <a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
@@ -19,7 +21,7 @@
       &emsp;<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
       {% endfor %}
   {% endif %}
-</div>
+  </div>
 </p>
 
 <p>
