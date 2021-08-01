@@ -18,7 +18,7 @@ Demo site is [here](https://emily-zola-theme.netlify.app/).
 
 ```
 cd YOUR_SITE_DIRECTORY/themes
-git clone https://gitlab.com/kyoheiu/emily_zola_theme.git
+git clone https://github.com/kyoheiu/emily_zola_theme.git
 ```
 
 and set the theme-name in `config.toml` to `emily_zola_theme`.
