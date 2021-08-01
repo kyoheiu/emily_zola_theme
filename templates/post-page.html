@@ -6,11 +6,11 @@
 
 {% block content %}
 <p>
-  <div class="postpage_title">{{ page.title }}</div>
+  <div class="title_postpage">{{ page.title }}</div>
 </p>
 <p>
-  <div class="date">{{ page.date }}</div>
-  <div class="taxonomies">
+  <div class="date_postpage">{{ page.date }}</div>
+  <div class="taxonomies_postpage">
   {% if page.taxonomies.categories %}
       {% for category in page.taxonomies.categories %}
       <a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>

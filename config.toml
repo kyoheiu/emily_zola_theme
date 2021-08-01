@@ -35,7 +35,7 @@ taxonomies = [
 #       {code = "it"}, # there won't be a feed for Italian content
 #     ]
 #
-languages = []
+# languages = []
 
 [markdown]
 # When set to "true", all code blocks are highlighted.

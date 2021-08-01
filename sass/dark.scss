@@ -88,6 +88,11 @@ body {
     color: $dark-themecolor;
 }
 
+.date_postpage {
+    color: $dark-themecolor;
+    text-align: right;
+}
+
 .title {
     color: $dark-themecolor;
     font-size: 1.3rem;
@@ -105,7 +110,7 @@ body {
     }
 }
 
-.postpage_title {
+.title_postpage {
     font-size: 1.6em;
     line-height: 1.4em;
     font-weight: bold;
@@ -115,6 +120,15 @@ body {
     font-size: 0.9rem;
     color: $dark-lightcolor;
     text-decoration: none;
+}
+
+.taxonomies_postpage {
+    text-align: right;
+    a {
+        font-size: 0.9rem;
+        color: $dark-lightcolor;
+        text-decoration: none;
+    }
 }
 
 .taxonomies_index a {

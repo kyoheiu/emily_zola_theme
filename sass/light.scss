@@ -88,6 +88,11 @@ body {
     color: $light-themecolor;
 }
 
+.date_postpage {
+    color: $light-themecolor;
+    text-align: right;
+}
+
 .title {
     color: $light-themecolor;
     font-size: 1.3rem;
@@ -115,6 +120,7 @@ body {
     font-size: 0.9rem;
     color: $lightcolor;
     text-decoration: none;
+    text-align: right;
 }
 
 .taxonomies_index a {
@@ -125,6 +131,16 @@ body {
     @media screen and(max-width: 480px) {
         display: none;
     }
+}
+
+.taxonomies_postpage {
+    text-align: right;
+    a {
+        font-size: 0.9rem;
+        color: $lightcolor;
+        text-decoration: none;
+        text-align: right;
+      }
 }
 
 .taxonomies_list {
