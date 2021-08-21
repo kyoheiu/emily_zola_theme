@@ -1,14 +1,14 @@
-$dark-themecolor:#66CCFF;
+$dark-themecolor:#FFDF6C;
 
-$backgroundcolor: #FFFFFF;
+$backgroundcolor: #FFEEDD;
 $textcolor: #222;
 $lightcolor: #666;
-$codebackground: #EFF1F5;
+$codebackground: #eFA3A0;
 
-$dark-backgroundcolor: #1E2836;
-$dark-textcolor: #EEEEEE;
+$dark-backgroundcolor: #3F3F3F;
+$dark-textcolor: #FFFFFF;
 $dark-lightcolor: #BBBBBB;
-$dark-codebackground: #555555;
+$dark-codebackground: #606060;
 
 html {
     font-size: 16px;
@@ -65,6 +65,7 @@ body {
     outline: none;
     background: transparent;
     vertical-align: middle;
+    font-family: sans-serif;
 }
 
 .site_title {
@@ -114,6 +115,7 @@ body {
     font-size: 1.6em;
     line-height: 1.4em;
     font-weight: bold;
+    color: $dark-textcolor;
 }
 
 .taxonomies a {
