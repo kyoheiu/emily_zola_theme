@@ -3,7 +3,7 @@ $dark-themecolor:#FFDF6C;
 $backgroundcolor: #FFEEDD;
 $textcolor: #222;
 $lightcolor: #666;
-$codebackground: #eFA3A0;
+$codebackground: #EFA3A0;
 
 $dark-backgroundcolor: #3F3F3F;
 $dark-textcolor: #FFFFFF;
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 pre {
-    border: 1px solid $codebackground;
+    border: 1px solid $dark-codebackground;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 20px;
