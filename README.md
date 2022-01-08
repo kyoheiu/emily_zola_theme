@@ -10,7 +10,6 @@ Features:
 - simple & clean
 - mobile-friendly
 - MathJax support
-- light / dark theme
 
 Demo site is [here](https://emily-zola-theme.netlify.app/).
 
@@ -50,7 +49,5 @@ In addition to default values, you can customize following parts easily:
 - favicon
 - header icon size (default width: 70px)
 - number of posts in `index.html` (default 5)
-- dark theme (`false` -> light theme | `true` -> dark theme)
-- change-theme button (`true` -> button will appear)
 
 Set your own in `themes/emily_zola_theme/theme.toml`, or to overwrite, copy `[extra]` block, paste it into your `config.toml` and edit.
