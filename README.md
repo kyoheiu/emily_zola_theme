@@ -1,7 +1,6 @@
 # emily_zola_theme
 
-![screenshot01](static/images/ss01-210821.png)
-![screenshot02](static/images/ss02-210821.png)
+![screenshot01](static/images/ss01.png)
 
 
 A KISS theme for Zola (static site generator written in Rust). 
@@ -32,7 +31,7 @@ In `YOUR_SITE_DIRECTORY/themes/emily_zola_theme/content`.
 
 ## MathJax support
 
-![screenshot03](static/images/ss03-210821.png)
+![screenshot03](static/images/ss02.png)
 
 To use MathJax, add the following lines to the front matter in `.md` file. `[extra]` is mandatory:
 
