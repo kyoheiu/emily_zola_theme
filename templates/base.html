@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   {% block title %}
-    <title>{{ config.title }}</title>
+  <title>{{ config.title }}</title>
   {% endblock %}
 
   <link rel="shortcut icon" type="image/png" href="{{ config.extra.emily_favicon }}">
@@ -16,28 +16,23 @@
   <link id="stylesheet" rel="stylesheet" type="text/css" href="/light.css">
   {% endif %}
 
-<script type="text/javascript" src="/js/theme.js"></script>
+  <script type="text/javascript" src="/js/theme.js"></script>
 
 </head>
 
 <div class="header">
   <div class="site_title">
-    <p><a href="/"><img src="{{ config.base_url }}{{ config.extra.emily_icon }}"
-      alt="{{ config.title }}" width="{{ config.extra.emily_iconsize }}" height=auto></a></p>
+    <p><a href="/"><img src="{{ config.base_url }}{{ config.extra.emily_icon }}" alt="{{ config.title }}"
+          width="{{ config.extra.emily_iconsize }}" height=auto></a></p>
     <p><a href="/">&nbsp;{{ config.title }}</a></p>
   </div>
   <div class="menu">
     <a href="/post">>archives</a>
     &nbsp;<a href="/about">>about</a>
-
-    {% if config.extra.emily_theme_toggler %}
-    &nbsp;<button onclick="changeTheme()">change theme</button>
-    {% endif %}
-
   </div>
 </div>
 
-<body onload = "getTheme()">
+<body onload="getTheme()">
   <section class="section">
     <div class="container">
       {% block content %} {% endblock %}
@@ -47,7 +42,8 @@
 
 <div class="footer">
   <a href="/">{{ config.title }}</a>&emsp;&copy; {{ config.extra.emily_author }}<br>
-  powered by <a href="https://www.getzola.org/">Zola</a>, theme <a href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+  powered by <a href="https://www.getzola.org/">Zola</a>, theme <a
+    href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
 </div>
 
 </html>

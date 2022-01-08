@@ -1,14 +1,11 @@
-$dark-themecolor:#FFDF6C;
+$tender-blue:#b3deef;
+$tender-yellow:#ffc24b;
+$tender-red:#f43753;
+$tender-magenta:#d3b987;
 
-$backgroundcolor: #FFEEDD;
-$textcolor: #222;
-$lightcolor: #666;
-$codebackground: #EFA3A0;
-
-$dark-backgroundcolor: #3F3F3F;
-$dark-textcolor: #FFFFFF;
-$dark-lightcolor: #BBBBBB;
-$dark-codebackground: #606060;
+$backgroundcolor: #282828;
+$textcolor: #feffff;
+$lighttextcolor: #eeeeee;
 
 html {
     font-size: 16px;
@@ -16,12 +13,12 @@ html {
 
 body {
     line-height: 1.5;
-    color: $dark-textcolor;
-    background-color: $dark-backgroundcolor;
+    color: $textcolor;
+    background-color: $backgroundcolor;
     font-family: sans-serif;
     width: 80%;
     min-width: 200px;
-    max-width: 1000px;
+    max-width: 720px;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -38,7 +35,7 @@ body {
     }
 
     a {
-        color: $dark-textcolor;
+        color: $textcolor;
         text-decoration: underline;
     }
 
@@ -48,19 +45,19 @@ body {
 }
 
 .header {
-    color: $dark-lightcolor;
-    background-color: $dark-backgroundcolor;
+    color: $lighttextcolor;
+    background-color: $backgroundcolor;
     top: 0;
     padding-bottom : 5px;
-    border-bottom: solid 1px $dark-themecolor;
+    border-bottom: solid 1px $tender-blue;
     overflow: hidden;
     a {
-        color: $dark-lightcolor;
+        color: $lighttextcolor;
     }
 }
 
 .button_no_decoration {
-    color: $dark-themecolor;
+    color: $tender-blue;
     border: none;
     outline: none;
     background: transparent;
@@ -73,7 +70,7 @@ body {
     justify-content: space-between;
     font-size: 1.5rem;
     a {
-        color: $dark-textcolor;
+        color: $textcolor;
         text-decoration: none;
     }
 }
@@ -86,16 +83,16 @@ body {
 }
 
 .date {
-    color: $dark-themecolor;
+    color: $tender-yellow;
 }
 
 .date_postpage {
-    color: $dark-themecolor;
+    color: $tender-blue;
     text-align: right;
 }
 
 .title {
-    color: $dark-themecolor;
+    color: $tender-blue;
     font-size: 1.3rem;
     line-height: 1.3rem;
     a {
@@ -115,12 +112,12 @@ body {
     font-size: 1.6em;
     line-height: 1.4em;
     font-weight: bold;
-    color: $dark-textcolor;
+    color: $textcolor;
 }
 
 .taxonomies a {
     font-size: 0.9rem;
-    color: $dark-lightcolor;
+    color: $lighttextcolor;
     text-decoration: none;
 }
 
@@ -128,14 +125,14 @@ body {
     text-align: right;
     a {
         font-size: 0.9rem;
-        color: $dark-lightcolor;
+        color: $lighttextcolor;
         text-decoration: none;
     }
 }
 
 .taxonomies_index a {
     font-size: 0.9rem;
-    color: $dark-lightcolor;
+    color: $lighttextcolor;
     text-decoration: none;
 
     @media screen and(max-width: 480px) {
@@ -150,41 +147,46 @@ body {
 }
 
 .footer {
-    color: $dark-lightcolor;
+    color: $lighttextcolor;
     text-align: right;
     margin-top: 50px;
     padding-top: 0px;
-    // border-top: solid 1px $dark-themecolor;
+    // border-top: solid 1px $tender-blue;
     a {
-        color: $dark-lightcolor;
+        color: $lighttextcolor;
     }
 }
 
 h1 {
     font-size: 2.2rem;
-    color: $dark-themecolor;
+    color: $tender-blue;
 }
 
 h2 {
     font-size: 2.0rem;
-    color: $dark-themecolor;
+    color: $tender-blue;
 }
 
 h3 {
     font-size: 1.5rem;    
-    color: $dark-themecolor;
+    color: $tender-blue;
 }
 
 h4 {
     font-size: 1.3rem;    
+    color: $tender-blue;
+
 }
 
 h5 {
     font-size: 1.2rem;    
+    color: $tender-blue;
 }
 
 h6 {
     font-size: 1.1rem;    
+    color: $tender-blue;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -199,11 +201,12 @@ pre {
 }
 
 :not(pre) > code {
-    background-color: $dark-codebackground;
+    background-color: $tender-yellow;
+    color: $backgroundcolor;
 }
 
 blockquote {
-    border-left: 5px solid $dark-themecolor;
+    border-left: 5px solid $tender-blue;
     padding: 0.5rem;
     margin: 1rem;
 }
@@ -214,11 +217,10 @@ table {
 
 table th {
     padding: 10px;
-    background-color: $dark-codebackground;
 }
 
 table th, td {
-    border: solid 1px $dark-codebackground;
+    border: solid 1px $tender-magenta;
 }
 
 table td {
@@ -226,9 +228,9 @@ table td {
 }
 
 button {
-    color: $dark-backgroundcolor;
-    background-color: $dark-themecolor;
+    color: $backgroundcolor;
+    background-color: $tender-blue;
     border: solid;
     border-radius: 3px;
-    border-color: $dark-themecolor;
+    border-color: $tender-blue;
 }

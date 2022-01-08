@@ -1,8 +1,8 @@
-name = "emily_zola_theme"
-description = "a KISS theme for Zola"
-license = "MIT"
-homepage = "https://github.com/kyoheiu/emily_zola_theme"
 demo = "https://emily-zola-theme.netlify.app/"
+description = "a KISS theme for Zola"
+homepage = "https://github.com/kyoheiu/emily_zola_theme"
+license = "MIT"
+name = "emily_zola_theme"
 
 [extra]
 # Author name, appears in footer.
@@ -24,9 +24,6 @@ emily_indexposts = 5
 # switch to dark-theme
 emily_dark_mode = false
 
-# show theme-toggler
-emily_theme_toggler = true
-
 [author]
-name = "Kyohei Uto"
 homepage = "https://github.com/kyoheiu"
+name = "Kyohei Uto"
