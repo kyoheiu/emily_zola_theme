@@ -1,8 +1,9 @@
-demo = "https://emily-zola-theme.netlify.app/"
-description = "a KISS theme for Zola"
-homepage = "https://github.com/kyoheiu/emily_zola_theme"
-license = "MIT"
 name = "emily_zola_theme"
+description = "a KISS theme for Zola"
+license = "MIT"
+min_version = "0.14.1"
+homepage = "https://github.com/kyoheiu/emily_zola_theme"
+demo = "https://emily-zola-theme.netlify.app/"
 
 [extra]
 # Author name, appears in footer.
