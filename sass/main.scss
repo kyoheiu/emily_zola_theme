@@ -1,11 +1,11 @@
-$tender-blue:#b3deef;
-$tender-yellow:#ffc24b;
-$tender-red:#f43753;
-$tender-magenta:#d3b987;
+// Blatantly borrowed colors from https://github.com/rose-pine/neovim
 
-$backgroundcolor: #282828;
-$textcolor: #feffff;
-$lighttextcolor: #eeeeee;
+$rose: #ebbcba;
+$iris: #c4a7e7;
+
+$backgroundcolor: #191724;
+$textcolor: #e0def4;
+
 
 body {
     line-height: 1.5;
@@ -41,24 +41,15 @@ body {
 }
 
 .header {
-    color: $lighttextcolor;
+    color: $textcolor;
     background-color: $backgroundcolor;
     top: 0;
     padding-bottom : 5px;
-    border-bottom: solid 1px $tender-blue;
+    border-bottom: solid 1px $rose;
     overflow: hidden;
     a {
-        color: $lighttextcolor;
+        color: $textcolor;
     }
-}
-
-.button_no_decoration {
-    color: $tender-blue;
-    border: none;
-    outline: none;
-    background: transparent;
-    vertical-align: middle;
-    font-family: sans-serif;
 }
 
 .site_title {
@@ -79,16 +70,16 @@ body {
 }
 
 .date {
-    color: $tender-yellow;
+    color: $iris;
 }
 
 .date_postpage {
-    color: $tender-blue;
+    color: $iris;
     text-align: right;
 }
 
 .title {
-    color: $tender-blue;
+    color: $rose;
     font-size: 1.3rem;
     a {
         text-decoration: none;
@@ -111,7 +102,6 @@ body {
 
 .taxonomies a {
     font-size: 0.9rem;
-    color: $lighttextcolor;
     text-decoration: none;
 }
 
@@ -119,14 +109,13 @@ body {
     text-align: right;
     a {
         font-size: 0.9rem;
-        color: $lighttextcolor;
+        color: $textcolor;
         text-decoration: none;
     }
 }
 
 .taxonomies_index a {
     font-size: 0.9rem;
-    color: $lighttextcolor;
     text-decoration: none;
 
     @media screen and (max-width: 480px) {
@@ -140,72 +129,71 @@ body {
     }
 }
 
+.hr_bottom {
+  color: $rose;
+}
+
 .footer {
-    color: $lighttextcolor;
     text-align: right;
     margin-top: 50px;
     padding-top: 0px;
     // border-top: solid 1px $tender-blue;
     a {
-        color: $lighttextcolor;
+        color: $textcolor;
     }
 }
 
 h1 {
     font-size: 2.2rem;
-    color: $tender-blue;
 }
 
 h2 {
     font-size: 2.0rem;
-    color: $tender-blue;
 }
 
 h3 {
     font-size: 1.5rem;    
-    color: $tender-blue;
 }
 
 h4 {
     font-size: 1.3rem;    
-    color: $tender-blue;
-
 }
 
 h5 {
     font-size: 1.2rem;    
-    color: $tender-blue;
 }
 
 h6 {
     font-size: 1.1rem;    
-    color: $tender-blue;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: $rose;
     font-weight: bold;
 }
 
 pre {
-    border: 1px solid #AAA;
+    border: 1px solid;
     overflow-x: auto;
     overflow-y: hidden;
     padding: 20px;
 }
 
-:not(pre) > code {
-    background-color: $tender-yellow;
+:not(pre)>code {
     color: $backgroundcolor;
+    background-color: $textcolor;
+    padding: 3px;
+    border-radius: 8px;
 }
 
 blockquote {
-    border-left: 5px solid $tender-blue;
+    border-left: 3px solid;
     padding: 0.5rem;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 table {
+    border-collapse: collapse;
     max-width: 90%;
 }
 
@@ -213,18 +201,12 @@ table th {
     padding: 10px;
 }
 
-table th, td {
-    border: solid 1px $tender-magenta;
+table th,
+td {
+    border: 1px #666;
+    border-style: solid none;
 }
 
 table td {
     padding: 10px;
-}
-
-button {
-    color: $backgroundcolor;
-    background-color: $tender-blue;
-    border: solid;
-    border-radius: 3px;
-    border-color: $tender-blue;
 }

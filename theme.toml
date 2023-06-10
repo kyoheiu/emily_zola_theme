@@ -22,9 +22,6 @@ emily_iconsize = 70
 # number of posts in index.html.
 emily_indexposts = 5
 
-# switch to dark-theme
-emily_dark_mode = false
-
 [author]
 homepage = "https://github.com/kyoheiu"
 name = "Kyohei Uto"
