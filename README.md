@@ -1,6 +1,6 @@
 # emily_zola_theme
 
-![screenshot01](/images/ss01.png)
+![screenshot01](/static/images/ss01.png)
 
 
 A KISS theme for Zola (static site generator written in Rust). 
