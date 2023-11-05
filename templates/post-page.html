@@ -6,19 +6,19 @@
 
 {% block content %}
 <p>
-  <div class="title_postpage">{{ page.title }}</div>
+  <div class="text-3xl">{{ page.title }}</div>
 </p>
 <p>
-  <div class="date_postpage">{{ page.date }}</div>
-  <div class="taxonomies_postpage">
+  <div class="text-sm mb-2 text-right">{{ page.date }}</div>
+  <div class="text-right">
   {% if page.taxonomies.categories %}
       {% for category in page.taxonomies.categories %}
-      <a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
+      &ensp;<a class="text-slate-50" href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
       {% endfor %}
   {% endif %}
   {% if page.taxonomies.tags %}
       {% for tag in page.taxonomies.tags %}
-      &emsp;<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
+      &ensp;<a class="text-slate-50" href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
       {% endfor %}
   {% endif %}
   </div>
@@ -26,8 +26,8 @@
 
 <p>
   {{ page.content | safe }}
-  <hr class="hr_bottom"/>
 </p>
+<hr class="mb-4 border-amber-200" />
 
 {% if page.extra.math %}
 <script>

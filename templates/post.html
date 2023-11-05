@@ -2,47 +2,47 @@
 
 {% block content %}
 
-<h3>
+<h2 class="text-indigo-200">
   Categories & Tags
-</h3>
-<p class="taxonomies_list">
+</h2>
+<p>
 {% set categories = get_taxonomy(kind="categories") %}
   {% for term in categories.items %}
-      <a href="{{ term.permalink }}">/{{ term.name }}
+      <a class="no-underline text-slate-50" href="{{ term.permalink }}">/{{ term.name }}
       ({{ term.pages | length }})</a>&nbsp;
   {% endfor %}
 </ul>
 </p>
 
-<p class="taxonomies_list">
+<p>
 {% set tags = get_taxonomy(kind="tags") %}
   {% for term in tags.items %}
-    <a href="{{ term.permalink }}">#{{ term.name }}
+    <a class="no-underline text-slate-50" href="{{ term.permalink }}">#{{ term.name }}
     ({{ term.pages | length }})</a>&nbsp;
   {% endfor %}
 </ul>
 </p>
 
 {% for year, posts in section.pages | group_by(attribute="year") %}
-    <h3>{{ year }}</h3>
+    <h3 class="text-indigo-200">{{ year }}</h3>
 
     {% for post in posts %}
     <p>
-      <div class="date">
+      <div>
         {{ post.date }}
       </div>
-      <div class="archive_title">
-        <a href="{{ post.permalink }}">{{ post.title }}</a>
+      <div>
+        <a class="text-sky-200 no-underline text-xl" href="{{ post.permalink }}">{{ post.title }}</a>
       </div>
-      <div class="taxonomies_index">
+      <div>
           {% if post.taxonomies.categories %}
               {% for category in post.taxonomies.categories %}
-              &emsp;<a href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
+              &emsp;<a class="no-underline text-slate-50" href="{{ get_taxonomy_url(kind="categories", name=category) | safe }}">/{{ category }}</a>
               {% endfor %}
           {% endif %}
           {% if post.taxonomies.tags %}
               {% for tag in post.taxonomies.tags %}
-              &emsp;<a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
+              &emsp;<a class="no-underline text-slate-50" href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">#{{ tag }}</a>
               {% endfor %}
           {% endif %}
       </div>      

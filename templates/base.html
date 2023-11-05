@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="leading-relaxed text-base mx-auto mt-2 w-11/12 sm:w-2/3 sm:max-w-lg font-sans bg-slate-900 text-slate-50 no-underline">
 
 <head>
   <meta charset="utf-8">
@@ -9,32 +9,48 @@
   <link rel="shortcut icon" type="image/png" href="{{ config.extra.emily_favicon }}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/typography.css">
+  <link rel="stylesheet" href="/foundation.min.css">
+  <script src="/highlight.min.js"></script>
+  <script defer>hljs.highlightAll();</script>
 </head>
 
-<div class="header">
-  <div class="site_title">
-    <p><a href="/"><img class="icon" src="{{ config.base_url }}{{ config.extra.emily_icon }}" alt="{{ config.title }}"
-                                                                                 width="{{ config.extra.emily_iconsize }}" height=auto ></a></p>
-    <p><a href="/">&nbsp;{{ config.title }}</a></p>
-  </div>
-  <div class="menu">
-    <a href="/post">archives</a>
-    &nbsp;&nbsp;<a href="/about">about</a>
+<div class="flex items-start border-slate-50">
+  <a href="/">
+    <div class="rounded-full">
+      <img width="60" height="auto" src="{{ config.extra.emily_icon }}" alt="{{ config.title }}">
+    </div>
+  </a>
+  <div class="ml-auto">
+    <a class="no-underline text-slate-50" href="/">{{ config.title }}</a>
   </div>
 </div>
+<div class="flex justify-end">
+  <a class="flex items-start text-slate-50" href="/about">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+      <path fill-rule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 000 1.5h4.59l-2.1 1.95a.75.75 0 001.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 10-1.02 1.1l2.1 1.95H6.75z"
+        clip-rule="evenodd" />
+    </svg>
+    about</a>
+</div>
+<hr class="border-amber-200" />
 
 <body onload="getTheme()">
-  <section class="section">
-    <div class="container">
+  <section>
+    <div>
       {% block content %} {% endblock %}
     </div>
   </section>
 </body>
 
-<div class="footer">
-  <a href="/">{{ config.title }}</a>&emsp;&copy; {{ config.extra.emily_author }}<br>
-  powered by <a href="https://www.getzola.org/">Zola</a>, theme <a
-    href="https://github.com/kyoheiu/emily_zola_theme">emily</a>.
+<div class="flex justify-end my-4">
+  <div class="flex flex-col">
+    <div><a class="underline text-slate-50" href="/">{{ config.title }}</a>&ensp;&copy; {{ config.extra.emily_author }}
+    </div>
+    <div>powered by <a class="text-slate-50" href="https://www.getzola.org/">zola</a>, theme <a class="text-slate-50"
+        href="https://github.com/kyoheiu/emily_zola_theme">emily</a></div>
+  </div>
 </div>
 
 </html>
